@@ -31,7 +31,7 @@ $(document).ready(function () {
       },
       grid: {
         rows: 2,    
-        //fill: 'row',
+        fill: 'row',
       },
       breakpoints: {
       992:{

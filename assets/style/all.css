@@ -11859,7 +11859,8 @@ h5, .h5, .h5 {
   color: #C0A4A5; }
 
 .swiper {
-  height: 445px; }
+  height: 100%;
+  margin-right: -0.9375rem !important; }
 
 .swiper-slide {
   height: 100%;

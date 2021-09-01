@@ -34,14 +34,54 @@ $(document).ready(function () {
         fill: 'row',
       },
       breakpoints: {
-      992:{
-        // loop: true,
-        slidesPerView: 1.5,
-        grid: {
-          rows: 1, 
+        992:{
+          slidesPerView: 1.5,
+          grid: {
+            rows: 1, 
+          },
+        },
+        1400:{
+          slidesPerView: 2.2,
+          grid: {
+            rows: 1, 
+          },
+        },
+      }
+    });
+  }
+
+  //首頁-聽聽他們怎麼說
+  const feedbackSwiper = document.querySelector('.feedbackSwiper');
+  if (feedbackSwiper) {
+    const swiper = new Swiper(".feedbackSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      grid: {
+        rows: 3,
+        fill: 'row',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2.2,
+          grid: {
+            rows: 2,
+          },
+        },
+        992: {
+          slidesPerView: 3,
+          grid: {
+            rows: 2,
+          },
         },
       },
-      }
+      navigation: {
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev',
+      },
+      keyboard: {
+        enabled: true,
+        //onlyInViewport: false,
+      },
     });
   }
 

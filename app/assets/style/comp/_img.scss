@@ -1,0 +1,30 @@
+.logo {
+    text-indent: 101%;
+	width: 6rem;
+	height: 1.9375rem;
+    //header
+	&-primary {
+		background-image: url('../images/DOYOGA-logo.png');
+	}
+    //footer
+	&-white {
+		background-image: url('../images/DOYOGA.png');
+	}
+}
+
+.img{
+    object-fit: cover;
+    width: 100%;
+    //首頁banner
+    &-hero {
+        background-image: url('../images/index_HeroImg.jpeg');
+        height: 560px;
+        @include media-breakpoint-up(md){
+            height: 582px;
+        }
+    }
+    //首頁師資
+    &-teacher{
+        height: 628px;
+    }
+}

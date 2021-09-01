@@ -36,8 +36,8 @@ $(document).ready(function () {
         delay: 2000
       },
       grid: {
-        rows: 2 //fill: 'row',
-
+        rows: 2,
+        fill: 'row'
       },
       breakpoints: {
         992: {

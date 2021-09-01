@@ -1,0 +1,13 @@
+.form-check-input:checked {
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.form-control,.form-control:focus{
+    border: solid 1px $primary;
+    color: $primary;
+}
+
+.form-control::placeholder{
+    color: $primary;
+  }

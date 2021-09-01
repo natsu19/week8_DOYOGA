@@ -1,0 +1,57 @@
+//logo用 -header & footer
+.logo {
+    text-indent: 101%;
+	width: 6rem;
+	height: 1.9375rem;
+	&-primary {
+		background-image: url('../images/DOYOGA-logo.png');
+	}
+	&-white {
+		background-image: url('../images/DOYOGA.png');
+	}
+}
+//首頁banner用
+.heroImg {
+	background-image: url('../images/index_HeroImg.jpeg');
+	height: 36.375rem;
+	@include media-breakpoint-up(md){
+		height: 39.25rem;
+	}
+}
+
+//size
+.wh-auto{
+	width: auto !important;
+	height: auto !important;
+}
+
+.h-628{
+	height: 628px;
+}
+
+//師資.active狀態
+.TeacherDetail{
+	a{ color: $dark;}
+    .detail {
+        display: none;
+    }
+    .active .card{
+        @include media-breakpoint-up(md){
+			padding: $spacer * 10 !important;
+            margin-left: -$spacer * 20; //-80
+        }
+        .detail{
+            display: block;
+        }
+    }
+}
+
+//解決google icon橫向無法與文字對齊
+.material-icons {
+	display: inline-block;
+	font-size: inherit;
+	line-height: inherit;
+	vertical-align: middle;
+	transform: translateY(-.1em);
+}
+	

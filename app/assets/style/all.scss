@@ -1,0 +1,20 @@
+@import "bs5.1.0/_bootstrap";
+
+//匯入基本使用字型及icon
+@import url("https://pro.fontawesome.com/releases/v5.15.3/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+@import "settings/_base";
+@import "settings/_util";
+
+
+@import "helpers/_mixin";
+@import "helpers/_healper";
+
+
+@import "comp/_links";
+@import "comp/_form";
+@import "comp/_card";
+
+
+

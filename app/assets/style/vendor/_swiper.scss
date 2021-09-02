@@ -1,2 +1,17 @@
 //swiper
+//首頁-聽聽他們怎麼說
+.swiper-button-next::after{
+    content: 'arrow_forward';
+}
 
+.swiper-button-prev::after{
+    content: 'arrow_back';
+}
+.swiper-button-prev,.swiper-button-next{
+    &::after{
+        font-family: 'Material Icons';
+        font-size: $h2-font-size;
+        color: $secondary;
+        margin-top: $spacer;
+    }
+}

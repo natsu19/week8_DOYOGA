@@ -82,8 +82,8 @@ $(document).ready(function () {
         }
       },
       navigation: {
-        nextEl: '.swiper-next',
-        prevEl: '.swiper-prev'
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
       },
       keyboard: {
         enabled: true //onlyInViewport: false,

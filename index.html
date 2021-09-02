@@ -5,11 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁｜DOYOGA</title>
+  <title>首頁｜DOYOGA，做你的瑜珈</title>
   <link rel="stylesheet" href="assets/style/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -20,7 +17,7 @@
           DOYOGA logo
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon bg-none material-icons-outlined fs-2 wh-auto">
+          <span class="navbar-toggler-icon bg-none material-icons-outlined fs-2 w-auto h-auto">
               reorder
           </span>
         </button>
@@ -36,7 +33,7 @@
               <a class="nav-link fw-light hvr-underline-from-left" href="#" tabindex="-1" aria-disabled="true">當月課表</a>
             </li>
           </ul>
-          <a class="btn btn-outline-secondary hover-text-white rounded-3 me-4" href="booking.html">立即預約</a>
+          <a href="reservation＿＿1-plan.html" class="btn btn-outline-secondary hover-text-white rounded-3 me-4" title="立即預約" aria-label="立即預約">立即預約</a>
           <a class="btn btn-outline-secondary hover-text-white rounded-3" href="contact.html">聯絡我們</a>
         </div>
       </div>
@@ -59,7 +56,7 @@
           多給自己一點時間享受靜謐，傾聽內心的聲音。
         </li>
         <li>
-          <a href="booking.html" class="btn btn-light link-text-dark hover-secondary fs-5 px-4 py-2 me-2">立即預約</a>
+          <a href="reservation-step1.html" class="btn btn-light link-text-dark hover-secondary fs-5 px-4 py-2 me-2" title="立即預約" aria-label="立即預約">立即預約</a>
           <a href="class.html" class="btn btn-secondary hover-secondary link-text-white fs-5 px-4 py-2 px-4 py-2">課程介紹</a>
         </li>
       </ul>
@@ -296,7 +293,7 @@
               <h3 class="fs-5 mb-1 text-center">首次體驗</h3>
               <p class="fs-5 text-primary mb-2 text-center">NT $450 / 次</p>
               <p class="mb-10 mb-md-6 mb-lg-10">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-              <a href="reservation.html" class="btn btn-secondary link-text-white hover-secondary d-block w-100 py-2">選擇課程</a>
+              <a href="reservation-step1.html" class="btn btn-primary fs-5 link-text-white hover-secondary d-block w-100 py-2" title="選擇課程" aria-label="選擇課程">選擇課程</a>
             </div>
           </div>
         </div>
@@ -315,7 +312,7 @@
               <h3 class="fs-5 mb-1 text-center">短期體驗</h3>
               <p class="fs-5 text-primary mb-2 text-center">NT $1800 / 月</p>
               <p class="mb-10 mb-md-6 mb-lg-10">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-              <a href="reservation.html" class="btn btn-secondary link-text-white hover-secondary d-block w-100 py-2">選擇課程</a>
+              <a href="reservation-step1.html" class="btn btn-primary fs-5 link-text-white hover-secondary d-block w-100 py-2" title="選擇課程" aria-label="選擇課程">選擇課程</a>
             </div>
           </div>
         </div>
@@ -334,7 +331,7 @@
               <h3 class="fs-5 mb-1 text-center">長期體驗</h3>
               <p class="fs-5 text-primary mb-2 text-center">NT $5600 / 季</p>
               <p class="mb-10 mb-md-6 mb-lg-10">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-              <a href="reservation.html" class="btn btn-secondary link-text-white hover-secondary d-block w-100 py-2">選擇課程</a>
+              <a href="reservation-step1.html" class="btn btn-primary fs-5 link-text-white hover-secondary d-block w-100 py-2" title="選擇課程" aria-label="選擇課程">選擇課程</a>
             </div>
           </div>
         </div>
@@ -516,12 +513,8 @@
       </ul>
       <!-- Add Pagination -->
       <div class="d-md-none d-flex justify-content-between w-100">
-        <a href="#" class="swiper-next position-static mt-4">
-          <span class="material-icons text-secondary fs-2">arrow_back</span>
-        </a>
-        <a href="#" class="swiper-prev position-static mt-4">
-          <span class="material-icons text-secondary fs-2">arrow_forward</span>
-        </a>
+        <div class="swiper-button-prev position-static mt-4"></div>
+        <div class="swiper-button-next position-static mt-4"></div>
       </div>
     </div>
   </div>
@@ -551,10 +544,9 @@
   <section class="bg-secondary border-bottom border-1 border-light">
     <div class="container">
       <div class="row py-8">
-        <p class="col-lg-5 flex-grow-1 fs-4 fs-md-3 fw-md-medium text-white mb-0">現在訂閱，獲得課程優惠碼！</p>
+        <p class="col-lg-5 flex-grow-1 fs-4 fs-md-3 fw-md-medium text-white mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</p>
         <form class="d-flex col-lg-4 rounded-1">
           <div class="input-group">
-            <label for="email" class="d-none">電子郵件</label>
             <input class="form-control rounded-start" type="email" placeholder="輸入您的電子信箱" aria-label="輸入電子信箱">
             <button class="btn btn-primary text-white" type="submit">訂閱</button>
           </div>

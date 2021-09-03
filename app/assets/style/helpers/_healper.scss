@@ -1,20 +1,3 @@
-//師資.active狀態
-.TeacherDetail{
-	a{ color: $dark;}
-    .detail {
-        display: none;
-    }
-    .active .card{
-        @include media-breakpoint-up(md){
-			padding: $spacer * 10 !important;
-            margin-left: -$spacer * 20; //-80
-        }
-        .detail{
-            display: block;
-        }
-    }
-}
-
 //解決google icon橫向無法與文字對齊
 .material-icons {
 	display: inline-block;

@@ -60,6 +60,8 @@ $utilities: map-merge(
         null: $box-shadow,
         sm: $box-shadow-sm,
         lg: $box-shadow-lg,
+        line-primary: $box-shadow-line-primary,
+        line-secondary: $box-shadow-line-secondary,
         none: none,
       )
     ),
@@ -638,9 +640,28 @@ $utilities: map-merge(
       )
     ),
 
+    "text-indent": (
+      responsive: false,
+      property: list-style-position,
+      class: list-style-position,
+      values: (
+        inside: inside,
+      )
+    ),
+
+    "transform-origin": (
+      responsive: false,
+      property: transform-origin,
+      class: transform-origin,
+      values: (
+        start: start,
+        end:end,
+      )
+    ),
+
+
+
     // scss-docs-end utils-visibility
   ),
   $utilities
 );
-
-    //以下新增

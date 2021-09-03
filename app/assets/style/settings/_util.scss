@@ -3,4 +3,10 @@
 .bg-no-repeat{ background-repeat:no-repeat;}
 .bg-fixed{background-attachment: fixed;}
 .bg-cover{ background-size:cover;}
-.bg-none{ background-image: none !important;}
+.bg-img-none{ background-image: none !important;}
+.bg-color-none{ background-color: rgba($white,0);}
+
+//list
+.list-style-disc{
+    list-style-type: disc;
+}

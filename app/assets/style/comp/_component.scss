@@ -1,0 +1,43 @@
+//師資.active狀態
+.TeacherDetail{
+	a{ color: $dark;}
+    .hvr-grow{
+        transform-origin: end !important;
+    }
+    .detail {
+        display: none;
+    }
+    .active .card{
+        @include media-breakpoint-up(md){
+			padding: $spacer * 10 !important;
+            margin-left: -$spacer * 20; //-80
+        }
+        .detail{
+            display: block;
+        }
+    }
+}
+
+
+//reservation 方案選擇清單
+.ClassPlan {
+    .nav-link{
+        &.active{
+            box-shadow: 0 0 0 4px $primary !important;
+            .btnChoose {
+                @include btn-choose;
+            }
+
+        }
+    }
+        //選擇課程階級
+        .ClassLevel{
+            .nav-link.active{
+                box-shadow:inset 0 0 0 4px $white !important;
+                h4 .material-icons{
+                    opacity: 1 !important;
+                    
+                }
+            }
+        }
+}

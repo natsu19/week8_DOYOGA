@@ -1,0 +1,207 @@
+---
+title: 立即預約｜DOYOGA，做你的瑜珈 
+layout: ./app/layout.ejs
+engine: ejs
+current: reservation-step1
+---
+<div class="mt-12 mb-22 mt-md-16 mb-md-20 mb-lg-26">
+  <h2 class="fw-normal text-secondary text-center mb-4">立即預約</h2>
+  <div class="container ClassPlan ">
+  <!--步驟進度-->
+    <ul class="Progress row justify-content-md-center g-2 g-md-3 mb-8">
+      <li class="col-4 col-md-2">
+        <div class="step1_Plan rounded-3 bg-light text-secondary text-center py-3 w-100 active">選擇方案</a>
+      </li>
+      <li class="col-4 col-md-2">
+        <div class="step2_Info rounded-3 bg-light text-secondary text-center py-3 w-100">填寫資料</a>
+      </li>
+      <li class="col-4 col-md-2">
+        <div class="step3_Completed rounded-3 bg-light text-secondary text-center py-3 w-100">完成預約</div>
+      </li>
+    </ul>
+  
+    <!--方案清單-->
+    <ul class="nav nav-pills mb-3 row gap-4 gap-md-5 gap-lg-0" id="pills-tab" role="tablist">
+      <!--#1-->
+      <li class="nav-item col-lg-4 hvr-grow" role="presentation">
+        <a href="#" class="FirstBtn nav-link d-block rounded-3 overflow-hidden p-0 shadow-line-primary" id="pills-First-tab" data-bs-toggle="pill" data-bs-target="#pills-First" type="button" role="tab" aria-controls="pills-First" aria-selected="false">
+          <div class="card border-0">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-12">
+                <div class="ratio ratio-4x3">
+                  <img src="assets/images/woman in white tank top and white leggings bending her body.jpg" alt="首次體驗" class="img">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-12 d-flex align-items-center">
+                <div class="card-body text-secondary p-6">
+                  <h4 class="fs-5 text-secondary mb-1 text-center">首次體驗</h3>
+                  <p class="fs-5 text-primary mb-2 text-center">NT $450 / 次</p>
+                  <p class="text-secondary mb-10 mb-md-6 mb-lg-10">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                  <p class="btnChoose bg-primary text-white text-center fs-5 py-2" aria-label="選擇課程">選擇課程</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <!--#2-->
+      <li class="Plan nav-item col-lg-4 hvr-grow" role="presentation">
+        <a href="#" class="ShortBtn nav-link d-block rounded-3 overflow-hidden p-0 shadow-line-primary" id="pills-ShortTerm-tab" data-bs-toggle="pill" data-bs-target="#pills-ShortTerm" type="button" role="tab" aria-controls="pills-ShortTerm" aria-selected="false">
+          <div class="card border-0">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-12">
+                <div class="ratio ratio-4x3">
+                  <img src="assets/images/woman performing yoga.jpg" class="img" alt="短期體驗">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-12 d-flex align-items-center">
+                <div class="card-body text-secondary p-6">
+                  <h4 class="fs-5 text-secondary mb-1 text-center">短期體驗</h3>
+                  <p class="fs-5 text-primary mb-2 text-center">NT $1800 / 月</p>
+                  <p class="text-secondary mb-10 mb-md-6 mb-lg-10">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
+                  <p class="btnChoose bg-primary text-white text-center fs-5 hover-secondary py-2" title="選擇課程" aria-label="選擇課程">選擇課程</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <!--#3-->
+      <li class="LongtBtn nav-item col-lg-4 hvr-grow" role="presentation">
+        <a href="#" class="nav-link d-block rounded-3 overflow-hidden p-0 shadow-line-primary" id="pills-LongTerm-tab" data-bs-toggle="pill" data-bs-target="#pills-LongTerm" type="button" role="tab" aria-controls="pills-LongTerm" aria-selected="false">
+          <div class="card border-0">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-12">
+                <div class="ratio ratio-4x3">
+                  <img src="assets/images/woman in blue leggings and black tank top doing yoga.jpg" alt="長期體驗" class="img">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-12 d-flex align-items-center">
+                <div class="card-body text-secondary p-6">
+                  <h4 class="fs-5 text-secondary mb-1 text-center">長期體驗</h3>
+                  <p class="fs-5 text-primary mb-2 text-center">NT $5600 / 季</p>
+                  <p class="text-secondary mb-10 mb-md-6 mb-lg-10">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
+                  <p class="btnChoose bg-primary text-white text-center fs-5 hover-secondary py-2" aria-label="選擇課程">選擇課程</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <!-- #1 -->
+      <div class="tab-pane fade row" id="pills-First" role="tabpanel" aria-labelledby="pills-First-tab">
+        <!-- arrow -->
+        <div class="col-lg-4 py-8 text-center text-secondary">
+          <i class="fas fa-sort-down fs-5"></i>
+        </div>
+        <!-- LEVEL -->
+        <div class="bg-secondary pt-8 pt-lg-10 g-0">
+          <h3 class="fs-3 text-white text-center">選擇課程階級</h3>
+          <!-- Swiper start-->
+          <div class="swiper mt-8 ClassLevel">
+            <ul class="swiper-wrapper nav nav-pills text-start px-md-10 pt-6 pb-12 pt-lg-8 pb-lg-16 gap-6 gap-md-0">
+              <li class="swiper-slide nav-item" role="presentation">
+                <!--課程階級-->
+                <button class="w-100 h-100 nav-link rounded-3 p-6 bg-primary d-block text-white text-start shadow" id="pills-level-1-tab" data-bs-toggle="pill" data-bs-target="#pills-level-1" type="button" role="tab" aria-controls="pills-level-1" aria-selected="false">
+                  <h4 class="fs-3 fw-medium position-relative">
+                    基礎 Basic
+                    <span class="material-icons position-absolute end-0 opacity-25 fs-1">
+                      check_circle_outline
+                    </span>
+                  </h4>              
+                  <p class="mb-5">基礎課程<span class="badge rounded-pill bg-secondary fw-light ms-2 px-2 py-1">60 min</span></p>
+                  <ul class="d-gird gap1 list-style-disc ms-8">
+                    <li>入體位法動作解說</li>
+                    <li>瑜珈基礎動作、順位</li>
+                    <li>適合任何階段練習者</li>
+                  </ul>
+                </button>
+              </li>
+              <li class="swiper-slide nav-item" role="presentation">
+                <button class="w-100 h-100 nav-link rounded-3 p-6 bg-primary d-block text-white text-start shadow" id="pills-level-2-tab" data-bs-toggle="pill" data-bs-target="#pills-level-2" type="button" role="tab" aria-controls="pills-level-2" aria-selected="false">
+                  <h4 class="fs-3 fw-medium position-relative">
+                    中階 Intermediate
+                    <span class="material-icons position-absolute end-0 opacity-25 fs-1">
+                      check_circle_outline
+                    </span>
+                  </h4>              
+                  <p class="mb-5">艾揚格、哈達、寰宇<span class="badge rounded-pill bg-secondary fw-light ms-2 px-2 py-1">60 min</span></p>
+                  <ul class="d-gird gap1 list-style-disc ms-8">
+                    <li>刺激身體七個層次為核心</li>
+                    <li>結合流暢體位法練習、呼吸、觀想</li>
+                    <li>適合半年以上練習者</li>
+                  </ul>
+                </button>
+              </li>
+              <li class="swiper-slide nav-item" role="presentation">
+                <button class="w-100 h-100 nav-link rounded-3 p-6 bg-primary d-block text-white text-start shadow" id="pills-level-3-tab" data-bs-toggle="pill" data-bs-target="#pills-level-3" type="button" role="tab" aria-controls="pills-level-3" aria-selected="false">
+                  <h4 class="fs-3 fw-medium position-relative">
+                    高階 Advanced
+                    <span class="material-icons position-absolute end-0 opacity-25 fs-1">
+                      check_circle_outline
+                    </span>
+                  </h4>              
+                  <p class="mb-5">阿斯坦加、陰陽<span class="badge rounded-pill bg-secondary fw-light ms-2 px-2 py-1">60 min</span></p>
+                  <ul class="d-gird gap1 list-style-disc ms-8">
+                    <li>充分打開身體每個部位</li>
+                    <li>顯著提升力量與柔軟度</li>
+                    <li>適合一年以上練習者</li>
+                  </ul>
+                </button>
+              </li>
+            </ul>
+
+          
+          <!-- Swiper end-->
+        </div>
+      </div>
+      <!-- #2 -->
+      <div class="tab-pane fade row pills-ShortTerm d-lg-block" id="pills-ShortTerm" role="tabpanel" aria-labelledby="pills-ShortTerm-tab">
+        <!-- arrow -->
+        <div class="col-lg-4 py-8 mx-auto text-center text-secondary">
+          <i class="fas fa-sort-down"></i>
+        </div>
+        ...
+      </div>
+      <!-- #3 -->
+      <div class="tab-pane fade row pills-LongTerm d-lg-block" id="pills-LongTerm" role="tabpanel" aria-labelledby="pills-LongTerm-tab">
+        <!-- arrow -->
+        <div class="col-lg-4 py-8 ms-auto text-center text-secondary">
+          <i class="fas fa-sort-down"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- 預約說明 -->
+  <section class="Notice container mt-10 mb-22 mb-md-20 mt-md-8 mt-lg-9 mb-lg-26">
+    <!-- 顯示區 -->
+    <div class="tab-content text-center" id="pills-tabContent">
+      <div class="tab-pane fade show text-secondary" id="pills-level-1" role="tabpanel" aria-labelledby="pills-level-1-tab">
+        <p class="mb-1">您選擇的是</p>
+        <p class="fs-5 text text-decoration-underline">首次體驗課程-基礎</p>
+      </div>
+      <div class="tab-pane fade text-secondary" id="pills-level-2" role="tabpanel" aria-labelledby="pills-level-2-tab">
+        <p class="mb-1">您選擇的是</p>
+        <p class="fs-5 text text-decoration-underline">首次體驗課程-中階</p>
+      </div>
+      <div class="tab-pane fade text-secondary" id="pills-level-3" role="tabpanel" aria-labelledby="pills-level-3-tab">
+        <p class="mb-1">您選擇的是</p>
+        <p class="fs-5 text text-decoration-underline">首次體驗課程-高階</p>
+      </div>
+    </div>
+    <div class="row justify-content-md-center mt-10">
+      <div class=" col-md-8 col-lg-5 text-secondary">
+        <h2 class="text-center mb-4">預約須知</h2>
+        <ol class="reservation list-style-position-inside">
+            <li class="mb-1">如果有特殊體質、特殊狀況，請主動告知。</li>
+            <li class="mb-1">取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</li>
+            <li class="mb-1">為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</li>
+            <li class="mb-1">DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
+        </ol>
+        <a href="reservation-2.html" class="btn btn-primary hover-secondary w-100 text-white fs-5 mt-8 py-2" >繼續預約</a>
+      </div>
+    </div>
+  </section>
+</div>

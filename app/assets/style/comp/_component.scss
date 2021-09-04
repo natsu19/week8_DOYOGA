@@ -22,6 +22,7 @@
 //reservation 方案選擇清單
 .ClassPlan {
     .nav-link{
+        color: $white;
         &.active{
             box-shadow: 0 0 0 4px $primary !important;
             .btnChoose {
@@ -38,6 +39,9 @@
                     opacity: 1 !important;
                     
                 }
+            }
+            .swiper-slider{
+                height: 100%;
             }
         }
 }

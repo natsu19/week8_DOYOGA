@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
 @import url("https://unpkg.com/swiper/swiper-bundle.min.css");
+@import url("https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css");
 @import url("https://unpkg.com/aos@next/dist/aos.css");
 
 @import "settings/_base";
@@ -23,6 +24,7 @@
 @import "comp/_component"; 
 
 @import "vendor/_swiper";
+@import "vendor/_dataPicker";
 
 
 

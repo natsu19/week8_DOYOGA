@@ -23,7 +23,17 @@ $(document).ready(function () {
   // $(document).ready(() => {
   //   console.log('HesSchool Hello!');
   // });
-  //swiper
+  //首頁 師資
+
+  $('.TeacherDetail1').click(function () {
+    $('.TeacherDetail2').removeClass('active'), $('.TeacherDetail3').removeClass('active');
+  });
+  $('.TeacherDetail2').click(function () {
+    $('.TeacherDetail1').removeClass('active'), $('.TeacherDetail3').removeClass('active');
+  });
+  $('.TeacherDetail3').click(function () {
+    $('.TeacherDetail1').removeClass('active'), $('.TeacherDetail2').removeClass('active');
+  }); //swiper
   //首頁課程介紹
   //courseSwiper
 
@@ -128,7 +138,6 @@ $(document).ready(function () {
       fill: 'row',
       rows: 3
     },
-    slidesPerColumnFill: 'row',
     breakpoints: {
       768: {
         slidesPerView: 1.8,
@@ -142,17 +151,25 @@ $(document).ready(function () {
       }
     }
   }); //首次體驗 
+  // $('.FirstBtn').click(function(){
+  //   //把其他兩個卡片藏起來
+  //   $('.pills-ShortTerm,.pills-LongTerm').toggleClass('d-none d-lg-block');
+  // })
 
   $('.FirstBtn').click(function () {
-    //把其他兩個卡片藏起來
-    $('.pills-ShortTerm,.pills-LongTerm').toggleClass('d-none d-lg-block');
-  }); //點填寫資料、完成預約等分頁，"選擇課程階級"會隱藏
-
-  $('.projectPage').click(function () {
-    $('.reserveRemind').slideDown();
+    //顯示對應的結果
+    //$('.pills-First').toggleClass('d-none d-block');
+    $('.pills-First').removeClass('d-none'), $('.pills-ShortTerm').addClass('d-none'), $('.pills-LongTerm').addClass('d-none');
   });
-  $('.fillDataPage,.reservePage').click(function () {
-    $('.reserveRemind,.courseList').slideUp();
+  $('.ShortBtn').click(function () {
+    //顯示對應的結果
+    $('.pills-ShortTerm').removeClass('d-none'), //$('.pills-ShortTerm ').toggleClass('d-none d-block'),
+    $('.pills-First').addClass('d-none'), $('.pills-LongTerm').addClass('d-none');
+  });
+  $('.LongBtn').click(function () {
+    //顯示對應的結果
+    $('.pills-LongTerm').removeClass('d-none'), //$('.pills-LongTerm').toggleClass('d-none d-block');
+    $('.pills-ShortTerm').addClass('d-none'), $('.pills-First').addClass('d-none');
   }); // const ClassLevel = document.querySelector('.ClassLevel');
   // if (ClassLevel) {
   // const  swiper = new Swiper(".ClassLevel", {

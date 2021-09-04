@@ -17,7 +17,7 @@
           DOYOGA logo
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon bg-none material-icons-outlined fs-2 w-auto h-auto">
+          <span class="navbar-toggler-icon bg-img-none material-icons-outlined fs-2 w-auto h-auto">
               reorder
           </span>
         </button>
@@ -82,7 +82,7 @@
         </a>
       </li>
       <!--#2-->
-      <li class="Plan nav-item col-lg-4 hvr-grow" role="presentation">
+      <li class="nav-item col-lg-4 hvr-grow" role="presentation">
         <a href="#" class="ShortBtn nav-link d-block rounded-3 overflow-hidden p-0 shadow-line-primary" id="pills-ShortTerm-tab" data-bs-toggle="pill" data-bs-target="#pills-ShortTerm" type="button" role="tab" aria-controls="pills-ShortTerm" aria-selected="false">
           <div class="card border-0">
             <div class="row g-0">
@@ -104,8 +104,8 @@
         </a>
       </li>
       <!--#3-->
-      <li class="LongtBtn nav-item col-lg-4 hvr-grow" role="presentation">
-        <a href="#" class="nav-link d-block rounded-3 overflow-hidden p-0 shadow-line-primary" id="pills-LongTerm-tab" data-bs-toggle="pill" data-bs-target="#pills-LongTerm" type="button" role="tab" aria-controls="pills-LongTerm" aria-selected="false">
+      <li class="nav-item col-lg-4 hvr-grow" role="presentation">
+        <a href="#" class="LongtBtn nav-link d-block rounded-3 overflow-hidden p-0 shadow-line-primary" id="pills-LongTerm-tab" data-bs-toggle="pill" data-bs-target="#pills-LongTerm" type="button" role="tab" aria-controls="pills-LongTerm" aria-selected="false">
           <div class="card border-0">
             <div class="row g-0">
               <div class="col-md-6 col-lg-12">
@@ -126,22 +126,22 @@
         </a>
       </li>
     </ul>
-    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-content text-white" id="pills-tabContent">
       <!-- #1 -->
-      <div class="tab-pane fade row" id="pills-First" role="tabpanel" aria-labelledby="pills-First-tab">
+      <div class="tab-pane fade row pills-First d-none" id="pills-First" role="tabpanel" aria-labelledby="pills-First-tab">
         <!-- arrow -->
         <div class="col-lg-4 py-8 text-center text-secondary">
           <i class="fas fa-sort-down fs-5"></i>
         </div>
         <!-- LEVEL -->
-        <div class="bg-secondary pt-8 pt-lg-10 g-0">
-          <h3 class="fs-3 text-white text-center">選擇課程階級</h3>
+        <div class="bg-secondary pt-8 pt-lg-10">
+          <h3 class="fs-3 text-center">選擇課程階級</h3>
           <!-- Swiper start-->
-          <div class="swiper mt-8 ClassLevel px-md-10 pt-6 pb-12 pt-lg-8 pb-lg-16">
-            <ul class="swiper-wrapper nav nav-pills flex-md-nowrap text-start gap-6 gap-md-0">
+          <div class="ClassLevel swiper mt-8 px-md-10 pt-6 pb-12 pt-lg-8 pb-lg-16">
+            <ul class="swiper-wrapper nav nav-pills flex-md-nowrap text-start">
               <li class="swiper-slide nav-item" role="presentation">
                 <!--課程階級-->
-                <button class="w-100 h-100 nav-link rounded-3 p-6 bg-primary d-block text-white text-start shadow" id="pills-level-1-tab" data-bs-toggle="pill" data-bs-target="#pills-level-1" type="button" role="tab" aria-controls="pills-level-1" aria-selected="false">
+                <button class="w-100 h-100 nav-link rounded-3 p-6 bg-primary d-block text-start shadow" id="pills-level-1-tab" data-bs-toggle="pill" data-bs-target="#pills-level-1" type="button" role="tab" aria-controls="pills-level-1" aria-selected="false">
                   <h4 class="fs-3 fw-medium position-relative">
                     基礎 Basic
                     <span class="material-icons position-absolute end-0 opacity-25 fs-1">
@@ -157,7 +157,7 @@
                 </button>
               </li>
               <li class="swiper-slide nav-item" role="presentation">
-                <button class="w-100 h-100 nav-link rounded-3 p-6 bg-primary d-block text-white text-start shadow" id="pills-level-2-tab" data-bs-toggle="pill" data-bs-target="#pills-level-2" type="button" role="tab" aria-controls="pills-level-2" aria-selected="false">
+                <button class="w-100 h-100 nav-link rounded-3 p-6 bg-primary d-block text-start shadow" id="pills-level-2-tab" data-bs-toggle="pill" data-bs-target="#pills-level-2" type="button" role="tab" aria-controls="pills-level-2" aria-selected="false">
                   <h4 class="fs-3 fw-medium position-relative">
                     中階 Intermediate
                     <span class="material-icons position-absolute end-0 opacity-25 fs-1">
@@ -173,7 +173,7 @@
                 </button>
               </li>
               <li class="swiper-slide nav-item" role="presentation">
-                <button class="w-100 h-100 nav-link rounded-3 p-6 bg-primary d-block text-white text-start shadow" id="pills-level-3-tab" data-bs-toggle="pill" data-bs-target="#pills-level-3" type="button" role="tab" aria-controls="pills-level-3" aria-selected="false">
+                <button class="w-100 h-100 nav-link rounded-3 p-6 bg-primary d-block text-start shadow" id="pills-level-3-tab" data-bs-toggle="pill" data-bs-target="#pills-level-3" type="button" role="tab" aria-controls="pills-level-3" aria-selected="false">
                   <h4 class="fs-3 fw-medium position-relative">
                     高階 Advanced
                     <span class="material-icons position-absolute end-0 opacity-25 fs-1">
@@ -189,24 +189,34 @@
                 </button>
               </li>
             </ul>
-
-          
-          <!-- Swiper end-->
+            <!-- Swiper end-->
+          </div>
         </div>
       </div>
       <!-- #2 -->
-      <div class="tab-pane fade row pills-ShortTerm d-lg-block" id="pills-ShortTerm" role="tabpanel" aria-labelledby="pills-ShortTerm-tab">
+      <div class="tab-pane fade row pills-ShortTerm d-none" id="pills-ShortTerm" role="tabpanel" aria-labelledby="pills-ShortTerm-tab">
         <!-- arrow -->
-        <div class="col-lg-4 py-8 mx-auto text-center text-secondary">
-          <i class="fas fa-sort-down"></i>
+        <div class="col-lg-4 py-8 text-center text-secondary mx-auto">
+          <i class="fas fa-sort-down fs-5"></i>
         </div>
-        ...
+        <!-- LEVEL -->
+        <div class="bg-secondary pt-8 pt-lg-10">
+          <h3 class="fs-3 text-white text-center">選擇課程階級</h3>
+          <!-- Swiper start-->
+          LEVEL 2...
+        </div>
       </div>
       <!-- #3 -->
-      <div class="tab-pane fade row pills-LongTerm d-lg-block" id="pills-LongTerm" role="tabpanel" aria-labelledby="pills-LongTerm-tab">
+      <div class="tab-pane fade row pills-LongTerm d-none" id="pills-LongTerm" role="tabpanel" aria-labelledby="pills-LongTerm-tab">
         <!-- arrow -->
-        <div class="col-lg-4 py-8 ms-auto text-center text-secondary">
-          <i class="fas fa-sort-down"></i>
+        <div class="col-lg-4 py-8 text-center text-secondary ms-auto">
+          <i class="fas fa-sort-down fs-5"></i>
+        </div>
+        <!-- LEVEL -->
+        <div class="bg-secondary pt-8 pt-lg-10">
+          <h3 class="fs-3 text-white text-center">選擇課程階級</h3>
+          <!-- Swiper start-->
+          LEVEL 3...
         </div>
       </div>
     </div>

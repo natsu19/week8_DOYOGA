@@ -123,18 +123,21 @@ $(document).ready(function () {
 
   var ClassLevel = new Swiper(".ClassLevel", {
     slidesPerView: 1,
-    slidesPerColumn: 3,
     spaceBetween: 24,
+    grid: {
+      fill: 'row',
+      rows: 3
+    },
     slidesPerColumnFill: 'row',
     breakpoints: {
       768: {
         slidesPerView: 1.8,
-        slidesPerColumn: 1,
+        rows: 1,
         spaceBetween: 30
       },
       960: {
         slidesPerView: 3,
-        slidesPerColumn: 1,
+        rows: 1,
         spaceBetween: 20
       }
     }
@@ -169,6 +172,13 @@ $(document).ready(function () {
   //     }
   //   });
   // }
-  //--- end ---
+  // datepicker 日期選擇器
+
+  var elem = document.querySelector('input[name="datepicker"]');
+  var datepicker = new Datepicker(elem, {
+    buttonClass: 'btn text-secondary',
+    nextArrow: '>',
+    prevArrow: '<'
+  }); //--- end ---
 });
 //# sourceMappingURL=all.js.map

@@ -8,6 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
 @import url("https://unpkg.com/swiper/swiper-bundle.min.css");
+@import url("https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css");
 @import url("https://unpkg.com/aos@next/dist/aos.css");
 :root {
   --bs-blue: #0d6efd;
@@ -12575,18 +12576,23 @@ h5, .h5, .h5 {
 .TeacherDetail .active .card .detail {
   display: block; }
 
-.ClassPlan .nav-link.active {
-  -webkit-box-shadow: 0 0 0 4px #C0A4A5 !important;
-          box-shadow: 0 0 0 4px #C0A4A5 !important; }
-  .ClassPlan .nav-link.active .btnChoose {
-    background: #907A7B !important;
-    color: #fff !important; }
+.ClassPlan .nav-link {
+  color: #fff; }
+  .ClassPlan .nav-link.active {
+    -webkit-box-shadow: 0 0 0 4px #C0A4A5 !important;
+            box-shadow: 0 0 0 4px #C0A4A5 !important; }
+    .ClassPlan .nav-link.active .btnChoose {
+      background: #907A7B !important;
+      color: #fff !important; }
 
 .ClassPlan .ClassLevel .nav-link.active {
   -webkit-box-shadow: inset 0 0 0 4px #fff !important;
           box-shadow: inset 0 0 0 4px #fff !important; }
   .ClassPlan .ClassLevel .nav-link.active h4 .material-icons, .ClassPlan .ClassLevel .nav-link.active .h4 .material-icons {
     opacity: 1 !important; }
+
+.ClassPlan .ClassLevel .swiper-slider {
+  height: 100%; }
 
 .swiper-button-next::after {
   content: 'arrow_forward'; }
@@ -12599,5 +12605,21 @@ h5, .h5, .h5 {
   font-size: 2rem;
   color: #907A7B;
   margin-top: 0.25rem; }
+
+.form-control {
+  color: #907A7B;
+  border: 1px solid #C0A4A5; }
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background-color: #907A7B; }
+
+.dow, .day {
+  color: #907A7B; }
+
+.next {
+  color: #C0A4A5 !important; }
+
+.datepicker-picker {
+  border: 1px solid #C0A4A5 !important; }
 
 /*# sourceMappingURL=all.css.map */

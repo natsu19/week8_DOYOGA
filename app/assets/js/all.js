@@ -1,5 +1,3 @@
-$(document).ready(function () {
-//--- start ---
 
   //Aos
   // AOS.init({  
@@ -21,23 +19,58 @@ $(document).ready(function () {
 
 
   //首頁 師資
-  $('.TeacherDetail1').click(function(){
+  $('.TeacherDetail1').on('click',function(){
     $('.TeacherDetail2').removeClass('active'),
     $('.TeacherDetail3').removeClass('active');
   });
-  $('.TeacherDetail2').click(function(){
+  $('.TeacherDetail2').on('click',function(){
     $('.TeacherDetail1').removeClass('active'),
     $('.TeacherDetail3').removeClass('active');
   });
-  $('.TeacherDetail3').click(function(){
+  $('.TeacherDetail3').on('click',function(){
     $('.TeacherDetail1').removeClass('active'),
     $('.TeacherDetail2').removeClass('active');
   });
 
 
+
+  $('.FirstBtn').on('click',function(){
+    //顯示對應的結果
+    //$('.pills-First').toggleClass('d-none d-block');
+    $('.pills-First').removeClass('d-none'),
+    $('.pills-ShortTerm').addClass('d-none'),
+    $('.pills-LongTerm').addClass('d-none');
+  })
+
+  $('.ShortBtn').on('click',function(){
+    //顯示對應的結果
+    $('.pills-ShortTerm').removeClass('d-none'),
+    //$('.pills-ShortTerm ').toggleClass('d-none d-block'),
+    $('.pills-First').addClass('d-none'),
+    $('.pills-LongTerm').addClass('d-none');
+  })
+
+  $('.LongBtn').on('click',function(){
+    //顯示對應的結果
+    $('.pills-LongTerm').removeClass('d-none'),
+    //$('.pills-LongTerm').toggleClass('d-none d-block');
+    $('.pills-ShortTerm').addClass('d-none'),
+    $('.pills-First').addClass('d-none');
+  })
+
+
+  // datepicker 日期選擇器
+  const elem = document.querySelector('input[name="datepicker"]');
+  const datepicker = new Datepicker(elem, {
+  buttonClass: 'btn text-secondary',
+  nextArrow: '>',
+  prevArrow: '<'
+  })
+
+  
   //swiper
+
   //首頁課程介紹
-  //courseSwiper
   const autoPlaySwiper = document.querySelector('.autoPlaySwiper');
   if (autoPlaySwiper) {
   const  swiper = new Swiper(".autoPlaySwiper", {
@@ -126,39 +159,6 @@ $(document).ready(function () {
     }
   })
 
-  $('.FirstBtn').click(function(){
-    //顯示對應的結果
-    //$('.pills-First').toggleClass('d-none d-block');
-    $('.pills-First').removeClass('d-none'),
-    $('.pills-ShortTerm').addClass('d-none'),
-    $('.pills-LongTerm').addClass('d-none');
-  })
-
-  $('.ShortBtn').click(function(){
-    //顯示對應的結果
-    $('.pills-ShortTerm').removeClass('d-none'),
-    //$('.pills-ShortTerm ').toggleClass('d-none d-block'),
-    $('.pills-First').addClass('d-none'),
-    $('.pills-LongTerm').addClass('d-none');
-  })
-
-  $('.LongBtn').click(function(){
-    //顯示對應的結果
-    $('.pills-LongTerm').removeClass('d-none'),
-    //$('.pills-LongTerm').toggleClass('d-none d-block');
-    $('.pills-ShortTerm').addClass('d-none'),
-    $('.pills-First').addClass('d-none');
-  })
 
 
-  // datepicker 日期選擇器
-  const elem = document.querySelector('input[name="datepicker"]');
-  const datepicker = new Datepicker(elem, {
-  buttonClass: 'btn text-secondary',
-  nextArrow: '>',
-  prevArrow: '<'
-  })
-//--- end ---
-
-});
 

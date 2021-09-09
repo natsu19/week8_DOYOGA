@@ -5977,6 +5977,9 @@ textarea.form-control-lg {
 .ratio-5x4 {
   --bs-aspect-ratio: calc(4 / 5 * 100%); }
 
+.ratio-7x4 {
+  --bs-aspect-ratio: calc(4 / 7 * 100%); }
+
 .ratio-5x6 {
   --bs-aspect-ratio: calc(6 / 5 * 100%); }
 

@@ -2,17 +2,17 @@ $(document).ready(function () {
 //--- start ---
 
   //Aos
-  AOS.init({  
-    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-    offset: 120, // offset (in px) from the original trigger point
-    delay: 0, // values from 0 to 3000, with step 50ms
-    duration: 500, // values from 0 to 3000, with step 50ms
-    easing: 'ease', // default easing for AOS animations
-    once: false, // whether animation should happen only once - while scrolling down
-    mirror: false, // whether elements should animate out while scrolling past them
-    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  // AOS.init({  
+  //   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  //   offset: 120, // offset (in px) from the original trigger point
+  //   delay: 0, // values from 0 to 3000, with step 50ms
+  //   duration: 500, // values from 0 to 3000, with step 50ms
+  //   easing: 'ease', // default easing for AOS animations
+  //   once: false, // whether animation should happen only once - while scrolling down
+  //   mirror: false, // whether elements should animate out while scrolling past them
+  //   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   
-  });
+  // });
   // console.log('Hello World!');
 
   // $(document).ready(() => {
@@ -24,15 +24,15 @@ $(document).ready(function () {
   $('.TeacherDetail1').click(function(){
     $('.TeacherDetail2').removeClass('active'),
     $('.TeacherDetail3').removeClass('active');
-  })
+  });
   $('.TeacherDetail2').click(function(){
     $('.TeacherDetail1').removeClass('active'),
     $('.TeacherDetail3').removeClass('active');
-  })
+  });
   $('.TeacherDetail3').click(function(){
     $('.TeacherDetail1').removeClass('active'),
     $('.TeacherDetail2').removeClass('active');
-  })
+  });
 
 
   //swiper
@@ -66,7 +66,7 @@ $(document).ready(function () {
         },
       }
     });
-  }
+  };
 
   //首頁-聽聽他們怎麼說
   const feedbackSwiper = document.querySelector('.feedbackSwiper');
@@ -101,36 +101,9 @@ $(document).ready(function () {
         //onlyInViewport: false,
       },
     });
-  }
+  };
 
-  //立即預約-選擇等級
-  // const ClassLevel = document.querySelector('.ClassLevel');
-  // if (ClassLevel) {
-  // const swiper = new Swiper(".ClassLevel", {
-  //   slidesPerView: 1,
-  //   spaceBetween: 30,
-  //   grid: {
-  //     fill: 'row',
-  //   },
-  //   breakpoints: {
-  //     768:{
-  //       slidesPerView: 1.5,
-  //       rows: 1,
-  //       // loop: true,
-  //     },
-  //     992:{
-  //       slidesPerView: 2.3,
-  //       rows: 1,
-  //     },
-  //     1200:{
-  //       slidesPerView: 3,
-  //       spaceBetween: 20,
-  //       rows: 1,
-  //     },
-  //   }
-  // });
-  // }
-
+  //立即預約-選擇課程等級
   const ClassLevel = new Swiper(".ClassLevel",{
     slidesPerView: 1,
     spaceBetween: 24,
@@ -153,11 +126,6 @@ $(document).ready(function () {
     }
   })
 
-  //首次體驗 
-  // $('.FirstBtn').click(function(){
-  //   //把其他兩個卡片藏起來
-  //   $('.pills-ShortTerm,.pills-LongTerm').toggleClass('d-none d-lg-block');
-  // })
   $('.FirstBtn').click(function(){
     //顯示對應的結果
     //$('.pills-First').toggleClass('d-none d-block');
@@ -182,32 +150,6 @@ $(document).ready(function () {
     $('.pills-First').addClass('d-none');
   })
 
-    
-
-
-  
-  // const ClassLevel = document.querySelector('.ClassLevel');
-  // if (ClassLevel) {
-  // const  swiper = new Swiper(".ClassLevel", {
-  //     slidesPerView: 2,
-  //     spaceBetween: 30,
-      
-  //     grid: {
-  //       rows: 1,    
-  //       fill: 'row',
-  //     },
-  //     breakpoints: {
-  //       992:{
-  //         slidesPerView: 3,
-  //         grid: {
-  //           rows: 1, 
-  //         },
-  //       },
-
-  //     }
-  //   });
-  // }
-
 
   // datepicker 日期選擇器
   const elem = document.querySelector('input[name="datepicker"]');
@@ -215,7 +157,7 @@ $(document).ready(function () {
   buttonClass: 'btn text-secondary',
   nextArrow: '>',
   prevArrow: '<'
-  }); 
+  })
 //--- end ---
 
 });

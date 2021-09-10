@@ -392,6 +392,7 @@ $spacers: (
   11: $spacer * 11, //44
   12: $spacer * 12, //48
   13: $spacer * 13, //52
+  14: $spacer * 14, //56
   16: $spacer * 16, //64
   18: $spacer * 16, //72
   20: $spacer * 20, //80
@@ -589,6 +590,7 @@ $aspect-ratios: (
   "7x4": calc(4 / 7 * 100%),
   "5x6": calc(6 / 5 * 100%),
   "16x9": calc(9 / 16 * 100%),
+  "17x13": calc(13 / 17 * 100%),
   "21x9": calc(9 / 21 * 100%)
 ) !default;
 // scss-docs-end aspect-ratios

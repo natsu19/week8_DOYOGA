@@ -29,3 +29,11 @@
     }
 
 }
+
+//bg
+.bg-bottom{ background-position:bottom;}
+.bg-no-repeat{ background-repeat:no-repeat;}
+.bg-fixed{background-attachment: fixed;}
+.bg-cover{ background-size:cover;}
+.bg-img-none{ background-image: none !important;}
+.bg-color-none{ background-color: rgba($white,0);}

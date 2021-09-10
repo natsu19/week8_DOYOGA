@@ -650,6 +650,15 @@ $utilities: map-merge(
       )
     ),
 
+    "list-style-type": (
+      responsive: false,
+      property: list-style-type,
+      class: list-style,
+      values: (
+        disc: disc,
+      )
+    ),
+
     "transform-origin": (
       responsive: false,
       property: transform-origin,

@@ -1,0 +1,30 @@
+.bgImg-tt-info{
+    color: $white;
+    border-radius: 1rem !important;
+    overflow: hidden !important;
+    position: relative;
+    height: 350px;
+
+    @include media-breakpoint-only(md){
+        height: 216px;
+    }
+    .overlay{
+        position: absolute;
+        left: $grid-gutter-width * .5;
+        bottom: 0;
+        padding: $spacer * 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        z-index: 10;
+    }
+    .card-title{
+        font-size: $h3-font-size !important;
+        @include media-breakpoint-only(md){
+            font-weight: $font-weight-normal !important;
+        }
+    }
+    .img{
+        height: 100%;
+    }
+}

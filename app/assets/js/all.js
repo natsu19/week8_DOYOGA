@@ -1,3 +1,5 @@
+jQuery(function() {
+//--- start ---
 
   //Aos
   // AOS.init({  
@@ -33,7 +35,6 @@
   });
 
 
-
   $('.FirstBtn').on('click',function(){
     //顯示對應的結果
     //$('.pills-First').toggleClass('d-none d-block');
@@ -58,18 +59,35 @@
     $('.pills-First').addClass('d-none');
   })
 
-
-  // datepicker 日期選擇器
-  const elem = document.querySelector('input[name="datepicker"]');
-  const datepicker = new Datepicker(elem, {
-  buttonClass: 'btn text-secondary',
-  nextArrow: '>',
-  prevArrow: '<'
-  })
-
-  
   //swiper
-
+  //課程推薦
+  const recommendSwiper = document.querySelector('.recommendSwiper');
+  if (recommendSwiper) {
+  const  swiper = new Swiper(".recommendSwiper", {
+      slidesPerView: 1.4,
+      spaceBetween: 30,
+    //  loop:true,
+      autoplay: {
+        delay: 2000,
+      },
+      grid: {
+        rows: 1,    
+        fill: 'row',
+      },
+      breakpoints: {
+      768: {
+        slidesPerView: 3.5,
+        rows: 1,
+      },
+        992:{
+          slidesPerView: 4.2,
+          grid: {
+            rows: 1, 
+          },
+        },
+      }
+    });
+  };
   //首頁課程介紹
   const autoPlaySwiper = document.querySelector('.autoPlaySwiper');
   if (autoPlaySwiper) {
@@ -137,28 +155,45 @@
   };
 
   //立即預約-選擇課程等級
-  const ClassLevel = new Swiper(".ClassLevel",{
-    slidesPerView: 1,
-    spaceBetween: 24,
-    grid: {
-      fill: 'row',
-      rows: 3,
-    },
-
-    breakpoints: {
-      768: {
-        slidesPerView: 1.8,
-        rows: 1,
-        spaceBetween: 30,
+  const ClassLevel = document.querySelector('.ClassLevel');
+  if (ClassLevel) {
+    const swiper = new Swiper(".ClassLevel", {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      grid: {
+        fill: 'row',
+        rows: 3,
       },
-      960: {
-        slidesPerView: 3,
-        rows: 1,
-        spaceBetween: 20,
+
+      breakpoints: {
+        768: {
+          slidesPerView: 1.8,
+          spaceBetween: 30,
+          grid: {
+            rows: 1, 
+          },
+        },
+        960: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          grid: {
+            rows: 1, 
+          },
+        }
       }
-    }
+    });
+  };
+
+  // 立即預約 datepicker 日期選擇器
+  const elem = document.querySelector('input[name="datepicker"]');
+  const datepicker = new Datepicker(elem, {
+  buttonClass: 'btn text-secondary',
+  nextArrow: '>',
+  prevArrow: '<'
   })
 
+  
+//--- end ---
 
-
+});
 

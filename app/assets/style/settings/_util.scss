@@ -1,0 +1,9 @@
+.h-350{
+    height: 350px;
+}
+
+.h-md-only-216{
+    @include media-breakpoint-only(md){
+        height: 216px;
+    }
+}

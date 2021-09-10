@@ -3,14 +3,14 @@
     border-radius: 1rem !important;
     overflow: hidden !important;
     position: relative;
-    height: 350px;
+    // height: 350px;
 
-    @include media-breakpoint-only(md){
-        height: 216px;
-    }
+    // @include media-breakpoint-only(md){
+    //     height: 216px;
+    // }
     .overlay{
         position: absolute;
-        left: $grid-gutter-width * .5;
+        left: 0;
         bottom: 0;
         padding: $spacer * 6;
         display: flex;
@@ -26,5 +26,14 @@
     }
     .img{
         height: 100%;
+    }
+}
+
+.Intro{
+    .card-title{
+        font-size: $h5-font-size !important;
+        @include media-breakpoint-only(md){
+            font-size: $h6-font-size !important;
+        }
     }
 }

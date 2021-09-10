@@ -12667,6 +12667,13 @@ h5, .h5, .h5 {
 button:focus {
   outline: 0 !important; }
 
+.h-350 {
+  height: 350px; }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .h-md-only-216 {
+    height: 216px; } }
+
 .material-icons {
   display: inline-block;
   font-size: inherit;
@@ -12835,14 +12842,10 @@ button:focus {
   color: #fff;
   border-radius: 1rem !important;
   overflow: hidden !important;
-  position: relative;
-  height: 350px; }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    .bgImg-tt-info {
-      height: 216px; } }
+  position: relative; }
   .bgImg-tt-info .overlay {
     position: absolute;
-    left: 0.9375rem;
+    left: 0;
     bottom: 0;
     padding: 1.5rem;
     display: -webkit-box;
@@ -12863,6 +12866,12 @@ button:focus {
         font-weight: 400 !important; } }
   .bgImg-tt-info .img {
     height: 100%; }
+
+.Intro .card-title {
+  font-size: 1.25rem !important; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .Intro .card-title {
+      font-size: 1rem !important; } }
 
 .Progress .active {
   background: #907A7B !important;

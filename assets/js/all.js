@@ -174,6 +174,44 @@ jQuery(function () {
     });
   }
 
+  ; //師資介紹
+
+  var TeacherSwiper = document.querySelector('.TeacherSwiper');
+
+  if (TeacherSwiper) {
+    var _swiper4 = new Swiper(".TeacherSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 70,
+      //  loop:true,
+      grid: {
+        rows: 4,
+        fill: 'row'
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2.2,
+          grid: {
+            rows: 1
+          },
+          spaceBetween: 30,
+          autoplay: {
+            delay: 2000
+          }
+        },
+        992: {
+          slidesPerView: 3.2,
+          grid: {
+            rows: 1
+          },
+          spaceBetween: 30,
+          autoplay: {
+            delay: 2000
+          }
+        }
+      }
+    });
+  }
+
   ; // 立即預約 datepicker 日期選擇器
 
   var elem = document.querySelector('input[name="datepicker"]');

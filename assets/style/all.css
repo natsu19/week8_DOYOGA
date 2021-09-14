@@ -5968,6 +5968,9 @@ textarea.form-control-lg {
 .ratio-1x1 {
   --bs-aspect-ratio: 100%; }
 
+.ratio-3x2 {
+  --bs-aspect-ratio: calc(2 / 3 * 100%); }
+
 .ratio-3x4 {
   --bs-aspect-ratio: calc(4 / 3 * 100%); }
 
@@ -6415,6 +6418,9 @@ textarea.form-control-lg {
 
 .w-25 {
   width: 25% !important; }
+
+.w-35 {
+  width: 35% !important; }
 
 .w-50 {
   width: 50% !important; }
@@ -7975,6 +7981,12 @@ textarea.form-control-lg {
 .z-index-0 {
   z-index: 0 !important; }
 
+.z-index-1 {
+  z-index: 1 !important; }
+
+.z-index-5 {
+  z-index: 5 !important; }
+
 .z-index-fixed {
   z-index: 1030 !important; }
 
@@ -8030,6 +8042,8 @@ textarea.form-control-lg {
     display: none !important; }
   .w-sm-25 {
     width: 25% !important; }
+  .w-sm-35 {
+    width: 35% !important; }
   .w-sm-50 {
     width: 50% !important; }
   .w-sm-75 {
@@ -8948,6 +8962,8 @@ textarea.form-control-lg {
     display: none !important; }
   .w-md-25 {
     width: 25% !important; }
+  .w-md-35 {
+    width: 35% !important; }
   .w-md-50 {
     width: 50% !important; }
   .w-md-75 {
@@ -9866,6 +9882,8 @@ textarea.form-control-lg {
     display: none !important; }
   .w-lg-25 {
     width: 25% !important; }
+  .w-lg-35 {
+    width: 35% !important; }
   .w-lg-50 {
     width: 50% !important; }
   .w-lg-75 {
@@ -10784,6 +10802,8 @@ textarea.form-control-lg {
     display: none !important; }
   .w-xl-25 {
     width: 25% !important; }
+  .w-xl-35 {
+    width: 35% !important; }
   .w-xl-50 {
     width: 50% !important; }
   .w-xl-75 {
@@ -11702,6 +11722,8 @@ textarea.form-control-lg {
     display: none !important; }
   .w-xxl-25 {
     width: 25% !important; }
+  .w-xxl-35 {
+    width: 35% !important; }
   .w-xxl-50 {
     width: 50% !important; }
   .w-xxl-75 {
@@ -12667,12 +12689,25 @@ h5, .h5, .h5 {
 button:focus {
   outline: 0 !important; }
 
+.h-196 {
+  height: 196px; }
+
 .h-350 {
   height: 350px; }
+
+.w-95 {
+  width: 95px; }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .h-md-only-216 {
     height: 216px; } }
+
+@media (min-width: 768px) {
+  .mh-md-341 {
+    height: 341px; } }
+
+.start-px-24 {
+  left: 1.5rem; }
 
 .material-icons {
   display: inline-block;
@@ -12819,23 +12854,23 @@ button:focus {
   background-color: #C0A4A5;
   border-color: #C0A4A5; }
 
-.form-control, .form-control:focus {
+.form-control, .form-control:focus, .form-select {
   border: solid 1px #C0A4A5;
+  color: #907A7B; }
+
+.form-control::-webkit-input-placeholder, .form-select::-webkit-input-placeholder {
   color: #C0A4A5; }
 
-.form-control::-webkit-input-placeholder {
+.form-control::-moz-placeholder, .form-select::-moz-placeholder {
   color: #C0A4A5; }
 
-.form-control::-moz-placeholder {
+.form-control:-ms-input-placeholder, .form-select:-ms-input-placeholder {
   color: #C0A4A5; }
 
-.form-control:-ms-input-placeholder {
+.form-control::-ms-input-placeholder, .form-select::-ms-input-placeholder {
   color: #C0A4A5; }
 
-.form-control::-ms-input-placeholder {
-  color: #C0A4A5; }
-
-.form-control::placeholder {
+.form-control::placeholder, .form-select::placeholder {
   color: #C0A4A5; }
 
 .bgImg-tt-info {
@@ -12872,6 +12907,9 @@ button:focus {
   @media (min-width: 768px) and (max-width: 991.98px) {
     .Intro .card-title {
       font-size: 1rem !important; } }
+
+.CourseList .card-title {
+  margin-bottom: 0; }
 
 .Progress .active {
   background: #907A7B !important;

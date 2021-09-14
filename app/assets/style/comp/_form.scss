@@ -3,11 +3,11 @@
     border-color: $primary;
 }
 
-.form-control,.form-control:focus{
+.form-control,.form-control:focus,.form-select{
     border: solid 1px $primary;
-    color: $primary;
+    color: $secondary;
 }
 
-.form-control::placeholder{
+.form-control::placeholder,.form-select::placeholder{
     color: $primary;
   }

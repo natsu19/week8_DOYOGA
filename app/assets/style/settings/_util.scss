@@ -1,9 +1,16 @@
-.h-350{
-    height: 350px;
-}
+//尺寸
+    .h-196{ height: 196px;}
+    .h-350{ height: 350px;}
+    .w-95{ width: 95px;}
 
-.h-md-only-216{
+    //僅限md
     @include media-breakpoint-only(md){
-        height: 216px;
+        .h-md-only-216{ height: 216px;}
     }
-}
+    //md以上
+    @include media-breakpoint-up(md){
+        .mh-md-341{ height: 341px;}
+    }
+
+//位置
+    .start-px-24{left: $spacer * 6;}
